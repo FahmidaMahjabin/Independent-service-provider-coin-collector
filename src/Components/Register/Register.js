@@ -40,6 +40,9 @@ const Register = () => {
         if (errorInLogin){
             setError(errorInLogin)
         }
+        if(user){
+            navigate("/")
+        }
 
     }
     // function = reset password
