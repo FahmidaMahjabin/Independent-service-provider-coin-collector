@@ -6,8 +6,10 @@ const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky='top'>
             <Container>
-                <Navbar.Brand to="#home">
+                <Navbar.Brand to="/">
+                    
                     <img src = {logo} alt = "logo"></img>
+                    <span className='ms-2'>My Currency World</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">

@@ -15,10 +15,10 @@ const Banner = () => {
 
 
     return (
-        <div >
+        <div style = {{height:"400px"}}>
             <Carousel activeIndex={index} onSelect={handleSelect} >
                 <Carousel.Item >
-                    <img
+                    <img style={{objectFit:"cover", height: "400px"}}
                         className="d-block w-100"
                         src={bulkCoin}
                         alt="First slide"
@@ -29,7 +29,7 @@ const Banner = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item >
-                    <img
+                    <img style={{objectFit:"cover", height: "400px"}}
                         className="d-block w-100"
                         src={crownCoin}
                         alt="Second slide"
@@ -41,7 +41,7 @@ const Banner = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item >
-                    <img
+                    <img style={{objectFit:"cover", height: "400px"}}
                         className="d-block w-100"
                         src={anticCoin}
                         alt="Third slide"

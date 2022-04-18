@@ -22,7 +22,7 @@ function App() {
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/logIn" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
-        <Route path = "/service/:checkoutId" element = {<Checkout></Checkout>}></Route>
+        <Route path = "services/service/:checkoutId" element = {<Checkout></Checkout>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

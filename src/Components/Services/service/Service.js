@@ -7,7 +7,7 @@ const Service = ({ oneItem }) => {
     const navigate = useNavigate();
     const doCheckout = () =>{
         const checkoutId = oneItem.id;
-        navigate(`service/${checkoutId}`)
+        navigate(`services/service/${checkoutId}`)
         
     }
     return (
