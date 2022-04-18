@@ -9,6 +9,7 @@ import Header from './Components/Home/Header/Header';
 import Login from './Components/LogIn/Login';
 import Register from './Components/Register/Register';
 import Footer from './Components/Footer/Footer';
+import Checkout from './Components/Services/service/Checkout/Checkout';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/logIn" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
+        <Route path = "/service/:checkoutId" element = {<Checkout></Checkout>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
