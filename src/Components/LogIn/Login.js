@@ -26,8 +26,9 @@ const Login = () => {
         const password = event.target.password.value;
         signInWithEmailAndPassword(email, password)
 
-        navigate(from, { replace: true });
+        
     }
+    navigate(from, { replace: true });
     const {createUserUsingGoogle, createuserUsingFacebook} = useToSignInWithThirdParty();
     return (
         <div className="formContainer my-5 text-center">
