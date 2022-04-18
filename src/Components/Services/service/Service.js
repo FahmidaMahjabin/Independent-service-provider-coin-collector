@@ -18,7 +18,7 @@ const Service = ({ oneItem }) => {
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
                         {about}
-                        Price: {price}
+                        <p>Price: {price}</p>
                     </Card.Text>
                     <Button style = {{position:"absolute", bottom: "5px"}} onClick={doCheckout} variant="primary">CheckOut</Button>
                 </Card.Body>

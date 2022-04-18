@@ -2,8 +2,8 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div>
-            <h1>Blogs</h1>
+        <div className='container'>
+            <h1 className='text-success text-center mb-5'>Blogs</h1>
             <div>
                 <div>
                     <h3>Difference Between Authentication and Authorization</h3>
@@ -27,6 +27,9 @@ const Blogs = () => {
                 <hr></hr>
                 <div>
                     <h3>Different ways of Authentication</h3>
+                    <p>
+                        I am using firebase authentication because it's easy to use. It also has some build-in hooks library  which makes it more easy to use. Firebase provides any type of authentication such as email-password, google, github etc. 
+                    </p>
                     <ul>
                         <li>Cookie-Based authentication</li>
                         <li>Token-Based authentication</li>

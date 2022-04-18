@@ -10,7 +10,7 @@ const Checkout = () => {
     return (
         
         <div className='text-center'>
-            <div position="top-right" reverseOrder={false}><Toaster/></div>
+            <div position="top-right" ><Toaster/></div>
             <h1 class="text-success">Check Out</h1>
             <div className='w-50 bg-light my-5 p-4 mx-auto'>
                 <Form>

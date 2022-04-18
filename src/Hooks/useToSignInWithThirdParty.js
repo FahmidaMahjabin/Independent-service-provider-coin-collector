@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useSignInWithFacebook, useSignInWithGoogle} from 'react-firebase-hooks/auth';
 import auth from '../init';
 const useToSignInWithThirdParty = () => {
+    
     const navigate = useNavigate();
     // function = sign in with google
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
