@@ -13,14 +13,14 @@ const Service = ({ oneItem }) => {
     return (
         <div className='col-12 col-md-6 col-lg-4 d-flex align-items-stretch'>
             <Card >
-                <Card.Img className = "w-100" variant="top" src={picture} />
-                <Card.Body>
+                <Card.Img style = {{height:"330px" , objectFit: 'cover'}} className = "w-100" variant="top" src={picture} />
+                <Card.Body style = {{position: "relative", height: "200px"}}>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
                         {about}
-                        {price}
+                        Price: {price}
                     </Card.Text>
-                    <Button onClick={doCheckout} variant="primary">CheckOut</Button>
+                    <Button style = {{position:"absolute", bottom: "5px"}} onClick={doCheckout} variant="primary">CheckOut</Button>
                 </Card.Body>
             </Card>
         </div>

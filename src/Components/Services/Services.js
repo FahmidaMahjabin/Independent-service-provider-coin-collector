@@ -11,7 +11,7 @@ const data =
         {
             "id": "625c1ad597ada7b34eaa5d73",
             "picture": flagshipCoin,
-            "name": "Orr Floyd",
+            "name": "flagshipCoin",
             "about": "This is flagship coin of diffferent countries. You can select any country flagship coin to buy.",
             "price":"$100~400"
         },
@@ -19,28 +19,28 @@ const data =
         {
             "id": "625c1ad514eaf2fb1e65ce1c",
             "picture": crownCoin,
-            "name": "Kirk Delacruz",
+            "name": "crownCoin",
             "about": "I have collections of crownCoil. Please visit the gallery and select your desired crownCoin",
             "price":"$70~150"
         },
         {
             "id": "625c1ad5be8f94b850b57f32",
             "picture": anticCoin,
-            "name": "Sweet Palmer",
+            "name": "antic Coin",
             "about": "From Brithish, Islamic period all kinds of antic coins you can buy here",
             "price":"$130"
         },
         {
             "id": "625c1ad5703f7eef93339577",
             "picture": arbiCoin,
-            "name": "Sadie Cortez",
+            "name": "Arbic Coin",
             "about": "You'll get Silver coin of islamic period.Price will vary with the quality.",
             "price": "$120~200"
         },
         {
             "id": "625c1ad5795af864eea0c502",
             "picture": anyCountry,
-            "name": "Wilkins Wiggins",
+            "name": "Different Currency",
             "about": "You'll get any country coin. Price will vary with it's currency value",
             "price": "$10~100",
         },
