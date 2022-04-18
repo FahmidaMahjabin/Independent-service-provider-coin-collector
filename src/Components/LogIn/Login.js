@@ -1,8 +1,9 @@
 import React from 'react';
 import "./LogIn.css";
 import auth from '../../init';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import useToSignInWithThirdParty from '../../Hooks/useToSignInWithThirdParty';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 const Login = () => {
     console.log("auth:",auth);
     const navigate = useNavigate();
@@ -10,16 +11,33 @@ const Login = () => {
         navigate("/register")
 
     }
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useSignInWithEmailAndPassword(auth);
+    // function = getToLogIn
+    const getToLogIn = (event) =>{
+        event.preventDefault();
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+        signInWithEmailAndPassword(email, password)
+
+        navigate(from, { replace: true });
+    }
     const {createUserUsingGoogle, createuserUsingFacebook} = useToSignInWithThirdParty();
     return (
         <div className="formContainer my-5 text-center">
             <h1>log in page</h1>
-            <form>
-                <input type="email" placeholder='enter email'></input>
+            <form onSubmit={getToLogIn}>
+                <input type="email" name = "email" placeholder='enter email'></input>
 
-                <input type="password" placeholder='enter password'></input>
+                <input type="password" name = "password" placeholder='enter password'></input>
                 <p>New in My Currency World? <button onClick={gotoRegisterpage} className='btn btn-link'>Go to Register</button></p>
-                <button className='btn btn-warning d-block w-75 mx-auto' type="button">Log In</button>
+                <button className='btn btn-warning d-block w-75 mx-auto' type="submit">Log In</button>
             </form>
             <hr></hr>
             <h3>Log In using third party</h3>
