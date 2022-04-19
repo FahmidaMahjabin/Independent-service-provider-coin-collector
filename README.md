@@ -1,5 +1,5 @@
 <h1>My Currency World</h1>
-<p>live Server link:<a href = "https://independent-service-prov-20931.web.app/"></a>
+<p>live Server link:<a href = "https://independent-service-prov-20931.web.app/"> https://independent-service-prov-20931.web.app/</a>
 <h2>In this project</h2>
 <ul>
   <li>It's a personal website of a coin collector.</li>
